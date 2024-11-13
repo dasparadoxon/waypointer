@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 3587cff3f697b2842adb519195f5ca80
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - m_CustomInspectorAsset: {fileID: 9197481963319205126, guid: f5c73474a49b2994a8fece37ca5a83d3, type: 3}
+  - m_connectionsListEntryAsset: {fileID: 9197481963319205126, guid: 5e69e7c6c7aea5c45acbbe22d721d5e6, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

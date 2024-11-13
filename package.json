@@ -1,0 +1,35 @@
+{
+    "author": {
+        "email": "coming@soon",
+        "name": "Tom Trottel (dasparadoxon)",
+        "url": "https://github.com/dasparadoxon"
+    },
+    "changelogUrl": "https://github.com/dasparadoxon/waypointer/changelog.html",
+    "dependencies": {
+    },
+    "description": "Waypointer is a visual interactive waypoint system for NPC and other systems that need waypoints.",
+    "displayName": "WAYPOINTER",
+    "documentationUrl": "https://github.com/dasparadoxon/documentation/stable",
+    "keywords": [
+        "npc",
+        "pathfinding",
+        "terrain",
+        "wayoiubt",
+        "navigation",
+        "visualiation"
+    ],
+    "name": "com.tomtrottel.waypointer",
+    "publishConfig": {
+        "registry": "https://github.com/dasparadoxon/packages_forward/"
+    },
+    "samples": [
+        {
+            "description": "Additional examples",
+            "displayName": "Example scenes",
+            "path": "ExampleScenes~"
+        }
+    ],
+    "unity": "2020.3",
+    "unityRelease": "40f1",
+    "version": "0.5.0"
+}

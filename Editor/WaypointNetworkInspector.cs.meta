@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 10dfd1c47c2d10149942f676f79d6f6d
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - m_waypointNetworkUXML: {fileID: 9197481963319205126, guid: 43c6373465c71484d95b64fea96c841f,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

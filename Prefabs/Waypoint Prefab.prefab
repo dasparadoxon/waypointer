@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1203075627435924991
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 192841119020689836}
+  - component: {fileID: 6635378401362978712}
+  m_Layer: 0
+  m_Name: Waypoint Prefab
+  m_TagString: Untagged
+  m_Icon: {fileID: 2800000, guid: 6e59e6d8e690fd84790ec34c31e7d8ec, type: 3}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &192841119020689836
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1203075627435924991}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.14957751, y: 0.8498577, z: -0.3737367, w: -0.3401314}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6635378401362978712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1203075627435924991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0c79fd24ec67a243baaddaf42638e40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  debugMode: 0
+  colorForGizmoLine: {r: 0, g: 0, b: 0, a: 1}
+  label3DNameSize: 1
+  connections: []
+  placementVariationRadius: 0
+  exitWaypoint: 0
+  entryWaypoint: 0
+  distanceOfDirectionArrowsIfBothWays: 0.45
+  IconEntryWaypoint: {fileID: 2800000, guid: dcdeb01f491af2d4daa072a9178eefb3, type: 3}
+  IconExitWaypoint: {fileID: 2800000, guid: ac7ac33cec0bc0245a9423467f44231b, type: 3}
+  IconExitEntryWaypoint: {fileID: 2800000, guid: 6cb1d485774691d418554e16f8a5512c, type: 3}
+  IconDefaultWaypoint: {fileID: 2800000, guid: 6e59e6d8e690fd84790ec34c31e7d8ec, type: 3}
+  newWayPointPrefab: {fileID: 1203075627435924991}
