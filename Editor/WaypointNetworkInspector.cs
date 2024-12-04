@@ -7,6 +7,7 @@ using System.Reflection;
 using Unity.VisualScripting;
 //using Sirenix.OdinInspector;
 using System.Linq;
+using System.Net;
 
 namespace Waypointer
 {
@@ -63,6 +64,23 @@ namespace Waypointer
 
         }
 
+        [MenuItem("GameObject/Waypointer/Add Waypoint Network",false,10)]
+        static void AddNewWaypointNetwork(MenuCommand menuCommand)
+        {
+            Debug.Log("Doing Something...");
+            //WaypointNetwork waypointNetwork = new WaypointNetwork();
+
+            GameObject newWaypointNetworkGameObjectInHierarchy = new GameObject("New Waypoint Network");
+
+            WaypointNetwork wpn = new WaypointNetwork();
+
+            newWaypointNetworkGameObjectInHierarchy.AddComponent(typeof(WaypointNetwork));
+ 
+
+            Selection.activeObject = newWaypointNetworkGameObjectInHierarchy;
+
+        }
+
         public override VisualElement CreateInspectorGUI()
         {
             var container = new VisualElement();
@@ -92,14 +110,25 @@ namespace Waypointer
         private void HideOrShowNoWaypointMessageAndListView(VisualElement root)
         {
 
+            Debug.Log(target.ToSafeString());
+
             VisualElement messageBox = root.Q<VisualElement>("NoWaypointsMessage");
 
             ListView listView = root.Q<ListView>("NetworkWaypointsListView");
 
+            if(((WaypointNetwork)target).waypointsOfThisNetwork == null)
+            Debug.Log("WTF");
+
             if (messageBox != null)
             {
 
-                if (((WaypointNetwork)target).waypointsOfThisNetwork.Count() > 0)
+                if (
+                    ((WaypointNetwork)target).waypointsOfThisNetwork != null &&
+                    ((WaypointNetwork)target).waypointsOfThisNetwork.Count() > 0
+                    )
+
+
+
                 {
                     messageBox.style.display = DisplayStyle.None;
                     listView.style.display = DisplayStyle.Flex;
