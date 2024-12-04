@@ -6,7 +6,7 @@ Waypointer is a visual interactive waypoints system for Unity3D in the editor.
 
 Example usage is for NPC walking or traffic networks. 
 
-![scene - example network](https://github.com/user-attachments/assets/8e5e5453-bf57-4f6f-aa20-9cdc42a253e0)
+![scene - example network](https://github.com/user-attachments/assets/b9b2afe2-3373-4abd-9a15-9884543bf8d4)
 
 Waypoints can have one or more connections to other waypoints.
 
