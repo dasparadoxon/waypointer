@@ -1,0 +1,19 @@
+waypointtoolbutton {
+    border-left-color: rgb(96, 96, 96);
+    border-right-color: rgb(96, 96, 96);
+    border-top-color: rgb(96, 96, 96);
+    border-bottom-color: rgb(96, 96, 96);
+    flex-grow: 1;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-bottom: 3%;
+    margin-top: 2%;
+    margin-left: 4%;
+    margin-right: 4%;
+    background-color: rgb(233, 233, 233);
+}
+
+.unity-scroll-view {
+
+    display: none;
+}

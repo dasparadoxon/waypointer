@@ -1,0 +1,16 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Waypointer/UIToolkit/waypointuss.uss?fileID=7433441132597879392&amp;guid=8fe81eb54a3296146815a800b6eebaef&amp;type=3#waypointuss" />
+    <ui:VisualElement name="WaypointNetworkVisualizerInspectorContainer" style="flex-grow: 1; padding-top: 1%; padding-right: 1%; padding-bottom: 1%; padding-left: 1%;">
+        <ui:VisualElement name="waipointTopBannerTemplate">
+            <ui:VisualElement name="LogoContainer" class="LogoContainer" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; background-color: rgb(236, 236, 236);">
+                <ui:VisualElement name="IconContainer" style="flex-grow: 1; border-left-color: rgba(255, 0, 0, 0); border-right-color: rgba(255, 0, 0, 0); border-top-color: rgba(255, 0, 0, 0); border-bottom-color: rgba(255, 0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; background-image: none; -unity-background-scale-mode: scale-to-fit; justify-content: center;">
+                    <ui:VisualElement name="Icon" style="flex-grow: 0; border-left-color: rgb(255, 0, 0); border-right-color: rgb(255, 0, 0); border-top-color: rgb(255, 0, 0); border-bottom-color: rgb(255, 0, 0); border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; background-image: url(&quot;project://database/Assets/Waypointer/Icons/ICON_WaypointVisualizerComponent.png?fileID=21300000&amp;guid=c210434a8f02d654684eabbd14cb660c&amp;type=3#ICON_WaypointVisualizerComponent&quot;); -unity-background-scale-mode: scale-to-fit; min-height: 66px; min-width: 42%; width: 66px; max-height: 10%; margin-top: 1%; margin-right: 1%; margin-bottom: 1%; margin-left: 1%;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="NameAndLabel" style="flex-grow: 1;">
+                    <ui:Label tabindex="-1" text="Waypoint Network Visualizer" parse-escape-sequences="true" display-tooltip-when-elided="true" enable-rich-text="false" class="WaypointWaypointLabel" style="font-size: 15%; flex-grow: 9; padding-right: 3%; padding-top: 8%;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="OptionsContainer" style="flex-grow: 1; margin-top: 2%;" />
+    </ui:VisualElement>
+</ui:UXML>

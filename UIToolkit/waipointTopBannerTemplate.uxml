@@ -1,0 +1,5 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <ui:Template name="LogoContainer" src="project://database/Assets/Waypointer/UIToolkit/Templates/LogoContainer.uxml?fileID=9197481963319205126&amp;guid=7dcb569fe7cbe9947992b9b36b70093f&amp;type=3#LogoContainer" />
+    <Style src="project://database/Assets/UI%20Toolkit/waypointuss.uss?fileID=7433441132597879392&amp;guid=5046fc8618d6ad34cbf9f3e7b39649fb&amp;type=3#waypointuss" />
+    <ui:Instance template="LogoContainer" name="LogoContainer" />
+</ui:UXML>

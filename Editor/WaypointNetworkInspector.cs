@@ -110,14 +110,14 @@ namespace Waypointer
         private void HideOrShowNoWaypointMessageAndListView(VisualElement root)
         {
 
-            Debug.Log(target.ToSafeString());
+            
 
             VisualElement messageBox = root.Q<VisualElement>("NoWaypointsMessage");
 
             ListView listView = root.Q<ListView>("NetworkWaypointsListView");
 
-            if(((WaypointNetwork)target).waypointsOfThisNetwork == null)
-            Debug.Log("WTF");
+/*             if(((WaypointNetwork)target).waypointsOfThisNetwork == null)
+            Debug.Log("WTF"); */
 
             if (messageBox != null)
             {

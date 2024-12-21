@@ -1,0 +1,3 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:Button text="create new waypoint" parse-escape-sequences="true" display-tooltip-when-elided="true" name="CreateNewWaypointButton" style="flex-grow: 2; min-height: 50px;" />
+</ui:UXML>

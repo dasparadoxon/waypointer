@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <ui:VisualElement name="ConnectionListEntryContainer" style="flex-grow: 1; flex-direction: row;">
+        <uie:ObjectField name="WayPointObjectField" type="Waypoint, Assembly-CSharp" style="flex-grow: 1;" />
+        <ui:Button text="Reconnect" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ReconnectButton" style="flex-grow: 1; flex-shrink: 0; min-width: 32%; max-width: 32%; width: 32%;" />
+    </ui:VisualElement>
+</ui:UXML>
