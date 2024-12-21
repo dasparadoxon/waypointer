@@ -5,25 +5,21 @@ using UnityEngine.UIElements;
 using UnityEditor.UIElements;
 using System.Reflection;
 using Unity.VisualScripting;
-//using Sirenix.OdinInspector;
 using System.Linq;
 using System.Net;
 
 namespace Waypointer
 {
 
-
-
     [CustomEditor(typeof(WaypointNetwork))]
     public class WaypointNetworkInspector : Editor
     {
-        /*     public override void OnInspectorGUI() {
-                base.OnInspectorGUI();
-
-            } */
 
         [SerializeField]
         VisualTreeAsset m_waypointNetworkUXML;
+
+        [SerializeField]
+        bool debugMode = false;
 
         private Object lastSelectedObject;
 
@@ -41,12 +37,6 @@ namespace Waypointer
         private void OnEnable()
         {
 
-            /*         // force dirty SceneView.s_ActiveEditors
-                    // maybe this is a unity bug
-                    var method = typeof(SceneView).GetMethod("SetActiveEditorsDirty", BindingFlags.NonPublic | BindingFlags.Static);
-                    // ReSharper disable once PossibleNullReferenceException
-                    method.Invoke(null, new object[] { true }); */
-
             uxmlCustomINspector = m_waypointNetworkUXML.CloneTree();
 
             Button button = uxmlCustomINspector.Query<Button>("CreateNewWaypointButton");
@@ -55,9 +45,7 @@ namespace Waypointer
             {
                 AddNewWaypointButtonClicked();
 
-                /*             foreach (SceneView scene in SceneView.sceneViews)
-                                scene.ShowNotification(new GUIContent("Click anywhere in the scene to place a new waypoint there.")); */
-            };
+             };
 
             uxmlCustomINspector.Q<Label>("WaypointNameLabel").text = ((WaypointNetwork)target).gameObject.name;
 
@@ -67,16 +55,12 @@ namespace Waypointer
         [MenuItem("GameObject/Waypointer/Add Waypoint Network",false,10)]
         static void AddNewWaypointNetwork(MenuCommand menuCommand)
         {
-            Debug.Log("Doing Something...");
-            //WaypointNetwork waypointNetwork = new WaypointNetwork();
-
             GameObject newWaypointNetworkGameObjectInHierarchy = new GameObject("New Waypoint Network");
 
             WaypointNetwork wpn = new WaypointNetwork();
 
             newWaypointNetworkGameObjectInHierarchy.AddComponent(typeof(WaypointNetwork));
  
-
             Selection.activeObject = newWaypointNetworkGameObjectInHierarchy;
 
         }

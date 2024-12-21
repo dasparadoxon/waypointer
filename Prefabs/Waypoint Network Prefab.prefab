@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1207260719238961269}
   - component: {fileID: 7105993218445012843}
-  - component: {fileID: 4724137175278567183}
+  - component: {fileID: 1807828068459426344}
   m_Layer: 0
   m_Name: Waypoint Network Prefab
   m_TagString: Untagged
@@ -42,13 +42,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 8024181011383516531}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a9674e1c575c344db3230893ac25412, type: 3}
+  m_Script: {fileID: 11500000, guid: 00833f4f300c542439c95d834cf23d91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceOfDirectionArrowsIfBothWays: 0.45
-  visible: 1
+  waypointsOfThisNetwork: []
+  prefabNewWaypoint: {fileID: 1203075627435924991, guid: e9d2d34afa9210e479a86cecb1e4e759, type: 3}
   debugMode: 0
---- !u!114 &4724137175278567183
+--- !u!114 &1807828068459426344
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -57,10 +57,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 8024181011383516531}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1e17bd246eb21d48abc08777b85fc4b, type: 3}
+  m_Script: {fileID: 11500000, guid: ddb264a1bdb08f242a420f2e048867c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waypointsOfThisNetwork: []
-  prefabNewWaypoint: {fileID: 1203075627435924991, guid: cb99a0aff4ce62e40b92660d3fac6279,
-    type: 3}
+  distanceOfDirectionArrowsIfBothWays: 0.45
+  visible: 1
   debugMode: 0

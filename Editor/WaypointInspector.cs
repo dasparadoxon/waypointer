@@ -227,20 +227,6 @@ namespace Waypointer
 
                 lastSelectedObject = Selection.activeGameObject;
 
-                // Execute your event logic here
-                //if (!eventExecuted)
-                //{//
-                Debug.Log($"User selected: {lastSelectedObject.name}");
-                //    eventExecuted = true;
-
-                // Optionally, you can reset the eventExecuted flag after some time or condition
-                // For example, you can reset it after a delay or when a specific condition is met
-                //}
-
-                Debug.Log($"Current active Object in OnSelectionChanged : {activeObjectAtTheTimeOfTheButtonPressed.ToString()}");
-
-                //Selection.activeObject = activeObject;
-
                 Selection.selectionChanged -= OnSelectionChanged;
 
                 buttonPressed = false;
@@ -291,8 +277,6 @@ namespace Waypointer
                 Waypoint waypointToConnectTo = Selection.activeGameObject.GetComponent<Waypoint>();
 
                 dbg($"There are {connectionsProperty.arraySize} in Connections of {Selection.activeGameObject.name} ");
-
-                //connectionsProperty.arraySize += 1;
 
                 connectionsProperty.InsertArrayElementAtIndex(0);
 
@@ -428,19 +412,13 @@ namespace Waypointer
 
             Rect buttonRect = new Rect(10, 10 + EditorGUIUtility.singleLineHeight, 100, 30);
 
-
-            if (GUI.Button(buttonRect, "Press Me"))
-                Debug.Log("Got it to work.");
-
             Handles.EndGUI();
 
             if (Event.current.type == EventType.MouseDown && Event.current.button == 0)
             {
-
-                // create object here at pointsPos
+               
                 if (selectionOfPositionForNewConnectedWaypoint)
                 {
-                    Debug.Log("Click on Scene to choose new waypoint position happend.");
 
                     Event.current.Use();
 
@@ -465,10 +443,6 @@ namespace Waypointer
 
             var dbgstr = $"Trying to set Icon for Waypoint {wp.name} with {wp.entryWaypoint}/{wp.exitWaypoint}";
 
-            //dbg(dbgstr);
-
-            //Debug.Log(dbgstr);
-
             Texture2D texture2Dtouse = null;
 
             if (wp.entryWaypoint & !wp.exitWaypoint)
@@ -483,23 +457,19 @@ namespace Waypointer
             if (!wp.entryWaypoint & !wp.exitWaypoint)
                 texture2Dtouse = wp.IconDefaultWaypoint;
 
-            //SceneView.RepaintAll(); 
-
-            //if (GUI.changed) EditorUtility.SetDirty (target);
-
-
             EditorGUIUtility.SetIconForObject(wp.gameObject, texture2Dtouse);
         }
 
         private void CreateNewConnectedWaypoint(Vector3 positionForNewWayPoint)
         {
-            //GameObject newWayPointGameObject = new GameObject();
-
             var wp = (Waypoint)target;
 
+            if(wp.newWayPointPrefab == null){
+                dbg("Prefab for New Waypoint is not set in the Waypoint Object, aborting !", true);
+                return;
+            }
+
             GameObject waypointPrefab = Instantiate(wp.newWayPointPrefab);
-
-
 
             newWaypointCount++;
 
@@ -509,18 +479,10 @@ namespace Waypointer
 
             dbg("New Waypoint : " + newWP);
 
-
-
-            //var i = EditorGUIUtility.GetIconForObject(wp.gameObject);
-
-            //dbg("I: " + i.ToString());
-
             newWP.gameObject.transform.parent = wp.transform.parent;
 
             newWP.gameObject.transform.position = positionForNewWayPoint;
             newWP.gameObject.transform.position += new Vector3(0, 1.2f, 0);
-
-            //var iconContent = EditorGUIUtility.IconContent(i.name); (Texture2D)iconContent.image
 
             EditorGUIUtility.SetIconForObject(newWP.gameObject, wp.IconDefaultWaypoint);
 

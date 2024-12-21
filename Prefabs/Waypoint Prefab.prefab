@@ -13,7 +13,7 @@ GameObject:
   m_Layer: 0
   m_Name: Waypoint Prefab
   m_TagString: Untagged
-  m_Icon: {fileID: 2800000, guid: 6e59e6d8e690fd84790ec34c31e7d8ec, type: 3}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -41,7 +41,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1203075627435924991}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0c79fd24ec67a243baaddaf42638e40, type: 3}
+  m_Script: {fileID: 11500000, guid: 36c7405515da50d40aa956d1e13f65f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   debugMode: 0
@@ -51,9 +51,8 @@ MonoBehaviour:
   placementVariationRadius: 0
   exitWaypoint: 0
   entryWaypoint: 0
-  distanceOfDirectionArrowsIfBothWays: 0.45
-  IconEntryWaypoint: {fileID: 2800000, guid: dcdeb01f491af2d4daa072a9178eefb3, type: 3}
-  IconExitWaypoint: {fileID: 2800000, guid: ac7ac33cec0bc0245a9423467f44231b, type: 3}
-  IconExitEntryWaypoint: {fileID: 2800000, guid: 6cb1d485774691d418554e16f8a5512c, type: 3}
-  IconDefaultWaypoint: {fileID: 2800000, guid: 6e59e6d8e690fd84790ec34c31e7d8ec, type: 3}
+  IconEntryWaypoint: {fileID: 2800000, guid: 46f419f2cc3f8004b83383a47abab021, type: 3}
+  IconExitWaypoint: {fileID: 2800000, guid: e69afbf96f027814baf98675c6e7f541, type: 3}
+  IconExitEntryWaypoint: {fileID: 2800000, guid: 0fb3dd736739fe74ca53ec83abc57f57, type: 3}
+  IconDefaultWaypoint: {fileID: 2800000, guid: dc7b8e98520f5a14f856a02f20684d2d, type: 3}
   newWayPointPrefab: {fileID: 1203075627435924991}

@@ -50,9 +50,6 @@ namespace Waypointer
                 foreach (var waypoint in allWaypoints)
                 {
 
-                    ////if (GizmoContext.InSelection(this))
-                    // {
-
                     if (Selection.activeTransform != waypoint.transform)
                     {
 
@@ -67,24 +64,10 @@ namespace Waypointer
                             if (w == null) break;
                             if (waypointGameObject == null) break;
 
-                            /*                     UnityEngine.Vector3 m_direction = (w.gameObject.transform.position - waypointGameObject.transform.position).normalized;
-
-                                                float m_distance = UnityEngine.Vector3.Distance(w.gameObject.transform.position, waypointGameObject.transform.position);
-
-                                                UnityEngine.Vector3 arrowheadposition = waypointGameObject.transform.position + (m_direction * (m_distance * 0.85f));
-
-                                                Draw.Arrowhead(arrowheadposition, m_direction, 0.5f);
-
-                                                Draw.DashedLine(waypointGameObject.transform.position, arrowheadposition, 0.3f, 0.3f); */
-
-
-
 
                             UnityEngine.Vector3 m_direction = (w.gameObject.transform.position - waypointGameObject.transform.position).normalized;
 
                             float angle = SignedAngleBetween(m_direction, Vector3.forward, Vector3.up);
-
-
 
                             bool anglePositv = angle > 0 ? true : false;
 
@@ -103,7 +86,7 @@ namespace Waypointer
                                 //Draw.DashedLine(waypoint.transform.position, arrowheadposition, 1, 0.3f);
 
                                 Gizmos.color = Color.blue;
-                                Gizmos.DrawLine(transform.position, arrowheadposition);
+                                //Gizmos.DrawLine(transform.position, arrowheadposition);
 
                             }
 
@@ -128,7 +111,7 @@ namespace Waypointer
 
 
                                 Gizmos.color = Color.blue;
-                                Gizmos.DrawLine(movedPosition, movedarrowheadposition);
+                                //Gizmos.DrawLine(movedPosition, movedarrowheadposition);
 
                             }
 
